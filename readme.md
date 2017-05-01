@@ -13,10 +13,10 @@
 
 - 全部直连，只用Host
 
-  **规则地址：**<https://raw.githubusercontent.com/CharlieZi/Shadowrocket-Meow/master/QR/Host-list.conf>
+  **规则地址：**<https://raw.githubusercontent.com/CharlieZi/Shadowrocket-Meow/master/Host-list.conf>
 
 <<<<<<< HEAD
-![地址扫码](https://raw.githubusercontent.com/CharlieZi/Shadowrocket-Meow/master/QR/Host-list.png)
+![地址扫码](https://raw.githubusercontent.com/CharlieZi/Shadowrocket-Meow/master/QR/Host-list.conf)
 
 =======
 -   默认只对 `被墙` 且 `世界前 500` 的网站进行代理。
