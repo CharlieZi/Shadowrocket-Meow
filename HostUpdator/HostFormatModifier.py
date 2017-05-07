@@ -3,7 +3,7 @@
 # Open a file
 import sys
 import os
-
+import time
 
 class hostDecorator(object):
 
@@ -36,7 +36,10 @@ class hostDecorator(object):
             HostUpdateList.append(line)
 
         baseLines = self.baseRules.readlines()
-        UpdatedList = baseLines + HostUpdateList
+        updateTime = ["# Updated at %s\n\n"%(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())),]
+
+        UpdatedList = baseLines + updateTime + HostUpdateList
+
 
         self.ruleList.writelines(UpdatedList)
 
@@ -49,3 +52,4 @@ class hostDecorator(object):
 
 hostUpdate = hostDecorator()
 hostUpdate.HostAddrssUpdator()
+
