@@ -1,5 +1,5 @@
 # Go Hosts
-# 2017-05-11 23:54:22
+# 2017-05-14 17:40:23
 
 
 127.0.0.1	localhost
@@ -7483,7 +7483,7 @@
 157.240.2.35 scontent-a.xx.fbcdn.net
 157.240.2.35 scontent-b.xx.fbcdn.net
 157.240.2.35 scontent-c.xx.fbcdn.net
-157.240.0.18  video.xx.fbcdn.net
+157.240.11.18  video.xx.fbcdn.net
 157.240.2.35 static.facebook.com
 157.240.2.35 s-static.facebook.com
 157.240.2.35 static.thefacebook.com
@@ -8409,6 +8409,13 @@
 185.12.83.2	support.bundlestars.com
 104.20.6.63	bandwagonhost.com
 61.91.161.217	embed.culturalspot.org
+52.84.246.72	d3c33hcgiwev3.cloudfront.net
+52.84.246.90	d3c33hcgiwev3.cloudfront.net
+52.84.246.106	d3c33hcgiwev3.cloudfront.net
+52.84.246.135	d3c33hcgiwev3.cloudfront.net
+52.84.246.144	d3c33hcgiwev3.cloudfront.net
+52.84.246.227	d3c33hcgiwev3.cloudfront.net
+52.84.246.252	d3c33hcgiwev3.cloudfront.net
 151.101.100.134	disqus.com
 151.101.100.134	www.disqus.com
 151.101.100.134	content.disqus.com
