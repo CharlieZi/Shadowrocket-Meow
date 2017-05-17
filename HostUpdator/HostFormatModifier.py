@@ -48,8 +48,3 @@ class hostDecorator(object):
 
         print ("done!")
 
-
-
-hostUpdate = hostDecorator()
-hostUpdate.HostAddrssUpdator()
-
