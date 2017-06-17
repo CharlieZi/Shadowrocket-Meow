@@ -1,5 +1,5 @@
 # Go Hosts
-# 2017-06-13 11:20:50
+# 2017-06-17 00:41:42
 
 
 127.0.0.1	localhost
@@ -556,6 +556,7 @@
 219.76.4.11	partnerpage.google.com
 219.76.4.11	apis.google.com
 219.76.4.11	domains.google
+219.76.4.11	environment.google
 219.76.4.11	www.registry.google
 219.76.4.11	www.domains.google
 219.76.4.11	registry.google
@@ -6084,19 +6085,24 @@
 219.76.4.11 r5---sn-hp57kn7e.googlevideo.com
 219.76.4.11 r4---sn-hp57kn7e.googlevideo.com
 219.76.4.11 r6---sn-hp57kn7e.googlevideo.com
-61.91.161.217	chatenabled.mail.google.com
-61.91.161.217	filetransferenabled.mail.google.com
-61.91.161.217	gmail.com
-61.91.161.217	gmail.google.com
-61.91.161.217	googlemail.l.google.com
-61.91.161.217	inbox.google.com
-61.91.161.217	isolated.mail.google.com
-61.91.161.217	m.gmail.com
-61.91.161.217	m.googlemail.com
-61.91.161.217	mail.google.com
-61.91.161.217	www.gmail.com
-61.91.161.217	mail-settings.google.com
+216.58.200.33	chatenabled.mail.google.com
+216.58.200.33	filetransferenabled.mail.google.com
+216.58.200.33	gmail.com
+216.58.200.33	gmail.google.com
+216.58.200.33	googlemail.l.google.com
+216.58.200.33	inbox.google.com
+216.58.200.33	isolated.mail.google.com
+216.58.200.33	m.gmail.com
+216.58.200.33	m.googlemail.com
+216.58.200.33	mail.google.com
+216.58.200.33	www.gmail.com
+216.58.200.33	mail-settings.google.com
 64.233.188.121	m.android.com
+216.58.200.33	gmail-smtp-in.l.google.com
+216.58.200.33	alt1.gmail-smtp-in.l.google.com
+216.58.200.33	alt2.gmail-smtp-in.l.google.com
+216.58.200.33	alt3.gmail-smtp-in.l.google.com
+216.58.200.33	alt4.gmail-smtp-in.l.google.com
 64.233.188.14	gmr-smtp-in.l.google.com
 64.233.188.16	googlemail-imap.l.google.com
 64.233.188.16	googlemail-smtp.l.google.com
@@ -6105,13 +6111,13 @@
 64.233.188.16	imap.googlemail.com
 64.233.188.16	smtp.googlemail.com
 64.233.188.27	gmail-smtp-in.l.google.com
-64.233.188.109	gmail-imap.l.google.com
-64.233.188.109	gmail-pop.l.google.com
-64.233.188.109	gmail-smtp.l.google.com
-64.233.188.109	imap.gmail.com
-64.233.188.109	smtp.gmail.com
-64.233.188.109	pop.gmail.com
-64.233.188.109	gmail-smtp-msa.l.google.com
+64.233.189.108	gmail-imap.l.google.com
+64.233.189.108	gmail-pop.l.google.com
+64.233.189.108	gmail-smtp.l.google.com
+64.233.189.108	imap.gmail.com
+64.233.189.108	smtp.gmail.com
+64.233.189.108	pop.gmail.com
+64.233.189.108	gmail-smtp-msa.l.google.com
 219.76.4.11	doc-00-00-docs.googleusercontent.com
 219.76.4.11	doc-04-00-docs.googleusercontent.com
 219.76.4.11	doc-08-00-docs.googleusercontent.com
@@ -7570,6 +7576,8 @@
 219.76.10.48 fbexternal-a.akamaihd.net
 219.76.10.48 fbcdn-video-a.akamaihd.net
 219.76.10.48 ig-l-a-a.akamaihd.net
+184.28.188.10	a.dolimg.com
+184.28.188.10	a248.e.akamai.net
 219.76.10.48	edge-mqtt-shv-01-ams2.facebook.com
 219.76.10.48	edge-mqtt-shv-01-ams3.facebook.com
 219.76.10.48	edge-mqtt-shv-01-ash5.facebook.com
@@ -8243,7 +8251,7 @@
 108.160.173.239	www.dropbox.com
 108.160.173.193	www.v.dropbox.com
 108.160.173.193	www.dropbox-dns.com
-108.160.172.6	dl.dropboxusercontent.com
+162.125.3.6 	dl.dropboxusercontent.com
 104.16.100.29	www.dropboxstatic.com
 104.16.100.29	cfl.dropboxstatic.com
 104.16.100.29	cf.dropboxstatic.com
@@ -8314,6 +8322,8 @@
 34.192.27.249	www.flipboard.com
 23.23.66.189	flipboard.helpshift.com
 23.23.66.189	ue.flipboard.com
+204.79.197.213	api.onedrive.com
+2.17.58.51	api.onedrive.live.com
 204.79.197.217	onedrive.live.com
 134.170.107.72	skyapi.onedrive.live.com
 204.79.197.217	skyweb.skyprod.akadns.net
@@ -8380,11 +8390,24 @@
 151.101.13.164	css.nyt.com
 151.101.13.164	int.nyt.com
 54.64.135.49 sso.nytcn.me
+52.203.102.52	messaging-sub.api.nytimes.com
+50.19.127.24	nytab.nytimes.com
+52.206.184.18	et.nytimes.com
+54.64.135.49	sso.nytcn.me
+50.16.209.123	tagx.nytimes.com
+54.209.158.74	rec.api.nytimes.com
+54.230.213.29	rec.api.nytimes.com
+54.230.213.29	static.sxzhchina.com
+122.152.169.5	l0.cn.nytimes.com
+208.100.17.186	ic.tynt.com
+23.219.132.99	vp.nyt.com
+52.192.30.67	m.cn.nytstyle.com
 104.20.83.194	apkpure.com
 104.20.83.194	a.apkpure.com
 104.20.83.194	download.apkpure.com
 104.20.83.194	m.apkpure.com
 104.20.83.194	static.apkpure.com
+104.20.82.194	i.apkpure.com
 108.163.178.42	translate.apkpure.com
 207.241.224.22	archive.org
 207.241.224.22	www.archive.org
@@ -8410,6 +8433,9 @@
 54.231.243.166 s3-ap-southeast-1.amazonaws.com
 54.239.38.102 eu-west-1.console.aws.amazon.com
 54.192.151.157 d3c33hcgiwev3.cloudfront.net
+52.216.80.48	github-cloud.s3.amazonaws.com
+54.231.40.3 	github-com.s3.amazonaws.com
+219.76.4.4	github-production-release-asset-2e65be.s3.amazonaws.com
 23.253.146.21 bundlestars.com
 54.192.232.60 cdn-images.bundlestars.com
 185.12.83.2 support.bundlestars.com
@@ -8449,7 +8475,7 @@
 151.101.100.64	links.services.disqus.com
 173.192.82.196	realtime.services.disqus.com
 151.101.100.134	referrer.disqus.com
-50.18.249.249	help.disqus.com
+50.18.252.168	help.disqus.com
 23.65.183.218	about.disqus.com
 23.65.183.218	blog.disqus.com
 23.65.183.218	publishers.disqus.com
@@ -8598,8 +8624,8 @@
 54.230.86.121 i2.sndcdn.com
 54.230.86.121 i3.sndcdn.com
 54.230.86.121 va.sndcdn.com
-52.16.188.121 eventgateway.soundcloud.com
-52.16.188.121 telemetry.soundcloud.com
+52.84.200.202 eventgateway.soundcloud.com
+52.84.200.202 telemetry.soundcloud.com
 54.230.86.73 wis.sndcdn.com
 68.232.45.67 ec-media.soundcloud.com
 68.232.46.220 ec-rtmp-media.soundcloud.com
@@ -8652,13 +8678,16 @@
 151.101.78.109 skyfire.vimeocdn.com
 151.101.78.109 f.vimeocdn.com
 151.101.78.109 i.vimeocdn.com
-23.66.247.93 www.voachinese.com
-23.66.247.93 gdb.voanews.com
-23.66.247.93 av.voanews.com
+23.42.169.61 www.voachinese.com
+23.42.169.61 gdb.voanews.com
+23.42.169.61 av.voanews.com
 192.229.173.207	w3schools.com
 192.229.173.207	www.w3schools.com
 104.28.31.251 theinitium.com
 104.28.30.251 theinitium.com
+104.28.31.251	stigma.theinitium.com
+104.28.31.251	theinitium.com
+104.28.31.251	api.theinitium.com
 219.76.4.4 m-dot-betaspike.appspot.com
 219.76.4.4 api.crittercism.com
 219.76.4.4 appload.ingest.crittercism.com
@@ -8729,6 +8758,8 @@
 169.46.12.69 batch.upsight-api.com
 119.81.248.34 batch.upsight-api.com
 50.31.162.95 www.digwebinterface.com
+54.230.143.112	update.getsync.com
+54.230.143.112	config.getsync.com
 103.20.93.138 slideshare.net
 103.20.93.138 www.slideshare.net
 61.213.168.33 www.elperiodico.cat
@@ -8861,6 +8892,7 @@
 151.101.64.84	blog.pinterest.com
 151.101.64.84	pinterest.com
 151.101.64.84	www.pinterest.com
+151.101.64.84	www.pinterest.jp
 151.101.64.84	s-media-cache-ak0.pinimg.com
 151.101.64.84	s.pinimg.com
 151.101.64.84	i.pinimg.com
