@@ -52,10 +52,10 @@ class HostUpdator(object):
 
 urlList = [
     "https://raw.githubusercontent.com/CharlieZi/Shadowrocket-Meow/master/hosts",
-    "https://raw.githubusercontent.com/racaljk/hosts/master/hosts",
+    # "https://raw.githubusercontent.com/racaljk/hosts/master/hosts",
     # "https://raw.githubusercontent.com/Lerist/Go-Hosts/master/hosts",
     # "https://raw.githubusercontent.com/Lerist/Go-Hosts/master/hosts-ad",
-    "https://raw.githubusercontent.com/sy618/hosts/master/dnsmasq/hosts",
+    # "https://raw.githubusercontent.com/sy618/hosts/master/dnsmasq/hosts",
     ]
 
 HostUpdateFlow = HostUpdator()
