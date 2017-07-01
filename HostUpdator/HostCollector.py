@@ -92,10 +92,13 @@ class hostCollector(object):
         finalHostList = []
         for entry in totalHostFile:
             host_ip = entry[0]
+
+            # print host_ip
             host_domain = entry[1]
             host_updatedTime = entry[2]
             lengthCountNum = 0
             for item in finalHostList:
+                print item
                 if item[1] == entry[1]:
                     if item[2] > entry[2]:
                         item[0] = entry[0]
@@ -103,7 +106,10 @@ class hostCollector(object):
                 else:
                     lengthCountNum = lengthCountNum + 1
             if lengthCountNum == len(finalHostList):
-                finalHostList = finalHostList + [entry]
+                if entry[0] == "":
+                    pass
+                else:
+                    finalHostList = finalHostList + [entry]
         return finalHostList      
 
     def rawHostFormatorAsList(self, HostList):
@@ -116,11 +122,12 @@ class hostCollector(object):
                         
     def rawHostFileWirtor(self, urlList):
         combinedHostList = self.hostfileCombineAsList(urlList)
-        finalHostList = self.hostDuplicatRemoveAsList(combinedHostList)
-        formatedHostList = self.rawHostFormatorAsList(finalHostList)
+        # print combinedHostList
+        # finalHostList = self.hostDuplicatRemoveAsList(combinedHostList)
+        formatedHostList = self.rawHostFormatorAsList(combinedHostList)
         rawHost = open("HostUpdator/hosts", "w+")
         
         rawHost.writelines(formatedHostList)
-
+        # print formatedHostList
 
         rawHost.close()
