@@ -24,6 +24,7 @@ class HostUpdator(object):
 
         from HostCollector import hostCollector
         from HostFormatModifier import hostDecorator
+
     def HostUpdateWithUrl(self,urlList):
         hostCollect = hostCollector()
         hostCollect.fileDownloader(urlList)
@@ -51,12 +52,11 @@ class HostUpdator(object):
 
 
 urlList = [
-    "https://raw.githubusercontent.com/CharlieZi/Shadowrocket-Meow/master/hosts",
+    # "https://raw.githubusercontent.com/CharlieZi/Shadowrocket-Meow/master/hosts",
     # "https://raw.githubusercontent.com/CharlieZi/Host-Collector/master/hostIPScanResult",
-    # "https://raw.githubusercontent.com/racaljk/hosts/master/hosts",
-    # "https://raw.githubusercontent.com/Lerist/Go-Hosts/master/hosts",
-    # "https://raw.githubusercontent.com/Lerist/Go-Hosts/master/hosts-ad",
-    # "https://raw.githubusercontent.com/sy618/hosts/master/dnsmasq/hosts",
+    "https://raw.githubusercontent.com/racaljk/hosts/master/hosts",
+    "https://raw.githubusercontent.com/sy618/hosts/master/FQ",
+    "https://raw.githubusercontent.com/vokins/yhosts/master/hosts",
     ]
 
 HostUpdateFlow = HostUpdator()

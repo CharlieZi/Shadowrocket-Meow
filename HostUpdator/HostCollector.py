@@ -51,11 +51,15 @@ class hostCollector(object):
         hostFile = open(fileName,"r") 
         hostHeader = hostFile.readlines()[0:5]
         pattern = re.compile('\d{4}-\d{2}-\d{2}.*')
+        pattern2 = re.compile('\d{4}\d{2}\d{2}\d{2}\d{2}.*')
         for wordlist in hostHeader:
-            tempList = wordlist.split(" ")
+            tempList = re.split(" |=",wordlist)
             for word in tempList:
                 if pattern.match(word):
                     hostPubDate = datetime.datetime.strptime(word.replace("\n",""), '%Y-%m-%d')
+                    break
+                if pattern2.match(word):
+                    hostPubDate = datetime.datetime.strptime(word.replace("\n",""), '%Y%m%d%H%M')
                     break
         hostFile.close()
         return hostPubDate
@@ -89,27 +93,34 @@ class hostCollector(object):
         return totalHostFile
 
     def hostDuplicatRemoveAsList(self, totalHostFile):
-        finalHostList = []
+        finalHostList = [totalHostFile[0]]
         for entry in totalHostFile:
-            host_ip = entry[0]
 
-            # print host_ip
             host_domain = entry[1]
+            host_ip = entry[0]
             host_updatedTime = entry[2]
+
+
             lengthCountNum = 0
             for item in finalHostList:
-                print item
-                if item[1] == entry[1]:
-                    if item[2] > entry[2]:
-                        item[0] = entry[0]
+                # print item
+                if host_domain == item[1]:
+                    if host_updatedTime <= item[2]:
+                        break
+                    else:
+                        finalHostList -= [item]
+                        finalHostList += [entry]
                         break
                 else:
-                    lengthCountNum = lengthCountNum + 1
-            if lengthCountNum == len(finalHostList):
-                if entry[0] == "":
-                    pass
-                else:
-                    finalHostList = finalHostList + [entry]
+                    lengthCountNum += 1
+                
+
+                if lengthCountNum == len(finalHostList):
+                    finalHostList += [entry]
+
+                    
+    
+
         return finalHostList      
 
     def rawHostFormatorAsList(self, HostList):
@@ -123,11 +134,28 @@ class hostCollector(object):
     def rawHostFileWirtor(self, urlList):
         combinedHostList = self.hostfileCombineAsList(urlList)
         # print combinedHostList
-        # finalHostList = self.hostDuplicatRemoveAsList(combinedHostList)
-        formatedHostList = self.rawHostFormatorAsList(combinedHostList)
+        finalHostList = self.hostDuplicatRemoveAsList(combinedHostList)
+        formatedHostList = self.rawHostFormatorAsList(finalHostList)
         rawHost = open("HostUpdator/hosts", "w+")
         
         rawHost.writelines(formatedHostList)
-        # print formatedHostList
+        # print formatedHostLists
 
         rawHost.close()
+
+
+
+# urlList = [
+#     # "https://raw.githubusercontent.com/CharlieZi/Shadowrocket-Meow/master/hosts",
+#     # "https://raw.githubusercontent.com/CharlieZi/Host-Collector/master/hostIPScanResult",
+#     # "https://raw.githubusercontent.com/racaljk/hosts/master/hosts",
+#     # "https://raw.githubusercontent.com/sy618/hosts/master/FQ",
+#     "https://raw.githubusercontent.com/vokins/yhosts/master/hosts",
+#     "https://raw.githubusercontent.com/vokins/yhosts/master/hosts",
+#     ]
+# hostCollect = hostCollector()
+# hostCollect.fileDownloader(urlList)
+# hostCollect.rawHostFileWirtor(urlList)
+
+
+
