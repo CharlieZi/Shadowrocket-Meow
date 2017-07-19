@@ -108,7 +108,7 @@ class hostCollector(object):
                     if host_updatedTime <= item[2]:
                         break
                     else:
-                        finalHostList -= [item]
+                        finalHostList.remove(item)
                         finalHostList += [entry]
                         break
                 else:

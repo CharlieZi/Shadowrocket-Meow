@@ -52,7 +52,7 @@ class HostUpdator(object):
 
 
 urlList = [
-    # "https://raw.githubusercontent.com/CharlieZi/Shadowrocket-Meow/master/hosts",
+    "https://raw.githubusercontent.com/CharlieZi/Shadowrocket-Meow/master/hosts",
     # "https://raw.githubusercontent.com/CharlieZi/Host-Collector/master/hostIPScanResult",
     "https://raw.githubusercontent.com/racaljk/hosts/master/hosts",
     "https://raw.githubusercontent.com/sy618/hosts/master/FQ",
