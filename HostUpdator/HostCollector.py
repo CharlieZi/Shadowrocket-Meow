@@ -28,7 +28,7 @@ class hostCollector(object):
             File = open(fileName, 'wb')
             meta = Url.info()
             fileSize = int(meta.getheaders("Content-Length")[0])
-            print "Downloading: %s Bytes: %s" % (fileName, fileSize)
+            # print "Downloading: %s Bytes: %s" % (fileName, fileSize)
 
             fileSizeDl = 0
             blockSize = 8192
