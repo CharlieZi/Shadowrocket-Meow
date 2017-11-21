@@ -5,6 +5,14 @@
 
 ## 两种逻辑
 
+- 美帝 IP 全部走代理 反正机房大多在美国
+
+**规则地址：**<https://raw.githubusercontent.com/CharlieZi/Shadowrocket-Meow/master/MeowList-US.conf>
+
+![地址扫码](https://raw.githubusercontent.com/CharlieZi/Shadowrocket-Meow/master/QR/MeowList-US.png)
+
+
+
 - 境外IP 全部走代理
 
 **规则地址：**<https://raw.githubusercontent.com/CharlieZi/Shadowrocket-Meow/master/MeowList.conf>
